@@ -166,31 +166,44 @@
 		</div>
         <p class="alert alert-info">If you have any questions, don´t hesitate to contact me by <a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">email</a>.</p>
         </section>
-      <hr>
-        <!-- Installation
+
+      <hr class="divider">
+
+        <!-- Javascript
 		============================ -->
         <section id="idocs_installation">
           <h2>Javascript</h2>
-          <p class="lead">I will go through the entire JS curriculum, from easiest topics to the most advanced.</p>
-          <ol>
-            <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
-            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
-            <ul>
-			<li><code>HTML/assets</code> - Contains all of the assets referenced
-			  <ul>
-                <li><code>HTML/css</code> - Stylesheet files</li>
-                <li><code>HTML/images</code> - Images files</li>
-                <li><code>HTML/js</code> - Javacript files</li>
-                <li><code>HTML/sass</code> - Sass files</li>
-                <li><code>HTML/vendor</code> – All external libs.</li>
-              </ul>
-			</li>
-			<li><code>HTML/index.html</code> - Homepage
-			</ul>
-            </li>
-            <li>You should upload all or specific HTML files as per your need.</li>
-            <li>You are good to go for adding your content now!</li>
-          </ol>
+          <p class="lead">I will go through most of the major JS functionalities, from the easiest topics to the most advanced.</p>
+        </section>
+
+        <hr class="divider">
+        <!-- Installation
+		============================ -->
+        <section id="js_variables"></section>
+          <h2>Variables</h2>
+          <p>Variables allow programmers to store the data for later use, such as in functions and loops. You should be responsible with naming your variables, so you can read your code easily.</p>
+          <p>There are 3 main ways (keywords) to initialize variables in JS:</p>
+          <ul>
+            <li><strong>var</strong>: <code>var dogBreed = "husky";</code></li>
+            <li><strong>let</strong>: <code>let dogBreed = "husky";</code> unlike var, let has scope constraints (more about scope later)</li>
+            <li><strong>const</strong>: <code>const dogBreed = "husky";</code>; while you can change the values of other variable types later, the value of const remains constant through the entire code. In this case, we can only have huskies in our code.</li>
+          </ul>
+          <h5>Let is the recommended way of initializing variables in modern JS code.</h5>
+          <hr>
+          <p>We can also create a variable without initializing it (adding a value to it). This is called <strong>declaring</strong> a variable.</p>
+          <p>Note: using semicolon is not necessary, but is strongly recommended in JS code.</p>
+          <hr>
+          <h4>Reassigning variables:</h4>
+          <p>Reassigning means changing the value of before-initialized variables. We can simply write dogBreed = "shiba" and now we can use shibas in our code. Keyword let/var is no longer necessary, as we initialized the variable before.</p>
+          <h5>!We can´t reassign variables initialized with keyword const!</h5>
+          <hr>
+          <h4>Identifiers (variable names)</h4>
+          <h5>We have several naming conventions when it comes to naming JS variables:</h5>
+          <ul>
+            <li>The name of the identifier must be unique.</li>
+            <li></li>
+          </ul>
+
         </section>
         
 		<hr class="divider">
