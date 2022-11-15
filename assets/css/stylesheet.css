@@ -780,6 +780,7 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 5rem;
   -ms-flex-item-align: stretch;
   align-self: stretch;
 }
