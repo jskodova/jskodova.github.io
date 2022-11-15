@@ -177,16 +177,19 @@
         </section>
 
         <hr class="divider">
-        <!-- Installation
+
+        <!-- JS Variables
 		============================ -->
-        <section id="js_variables"></section>
-          <h2>Variables</h2>
-          <p>Variables allow programmers to store the data for later use, such as in functions and loops. You should be responsible with naming your variables, so you can read your code easily.</p>
-          <p>There are 3 main ways (keywords) to initialize variables in JS:</p>
+        <section id="js_datatypes"></section>
+          <h2>Data types</h2>
+          <p>There are multiple data types in JS:</p>
           <ul>
-            <li><strong>var</strong>: <code>var dogBreed = "husky";</code></li>
-            <li><strong>let</strong>: <code>let dogBreed = "husky";</code> unlike var, let has scope constraints (more about scope later)</li>
-            <li><strong>const</strong>: <code>const dogBreed = "husky";</code>; while you can change the values of other variable types later, the value of const remains constant through the entire code. In this case, we can only have huskies in our code.</li>
+            <li><strong>numbers</strong>: <code>let num = 2;</code></li>
+            <li><strong>strings</strong>: <code>let name = "Steve";</code></li>
+            <li><strong>booleans</strong>: <code>let check = true;</code>; Booleans only have 2 possible values: true or false. They are mainly used in loops to check conditions</li>
+            <li><strong>objects</strong>: very important, will be explained later</li>
+            <li><strong>null</strong>: <code>let unkown = null;</code>empty variable</li>
+            <li><strong>undefined</strong>: <code>let unkown = undefined;</code>undefined variable</li>
           </ul>
           <h5>Let is the recommended way of initializing variables in modern JS code.</h5>
           <hr>
@@ -208,7 +211,38 @@
         </section>
         
 		<hr class="divider">
-		
+        <!-- JS Variables
+		============================ -->
+    <section id="js_variables"></section>
+    <h2>Variables</h2>
+    <p>Variables allow programmers to store the data for later use, such as in functions and loops. You should be responsible with naming your variables, so you can read your code easily.</p>
+    <p>There are 3 main ways (keywords) to initialize variables in JS:</p>
+    <ul>
+      <li><strong>var</strong>: <code>var dogBreed = "husky";</code></li>
+      <li><strong>let</strong>: <code>let dogBreed = "husky";</code> unlike var, let has scope constraints (more about scope later)</li>
+      <li><strong>const</strong>: <code>const dogBreed = "husky";</code>; while you can change the values of other variable types later, the value of const remains constant through the entire code. In this case, we can only have huskies in our code.</li>
+    </ul>
+    <h5>Let is the recommended way of initializing variables in modern JS code.</h5>
+    <hr>
+    <p>We can also create a variable without initializing it (adding a value to it). This is called <strong>declaring</strong> a variable.</p>
+    <p>Note: using semicolon is not necessary, but is strongly recommended in JS code.</p>
+    <hr>
+    <h4>Reassigning variables:</h4>
+    <p>Reassigning means changing the value of before-initialized variables. We can simply write dogBreed = "shiba" and now we can use shibas in our code. Keyword let/var is no longer necessary, as we initialized the variable before.</p>
+    <h5>!We can´t reassign variables initialized with keyword const!</h5>
+    <hr>
+    <h4>Identifiers (variable names)</h4>
+    <h5>We have several naming conventions when it comes to naming JS variables:</h5>
+    <ul>
+      <li>The name of the identifier must be unique.</li>
+      <li>The name of the identifier can´t be a reserved JS keyword, f.e. <code>let var = "variable"</code> won´t work.</li>
+      <li>The name of the identifier must start with a letter underscore(_), or a dollar sign. All other names cause an error.</li>
+    </ul>
+
+  </section>
+  
+<hr class="divider">
+
         <!-- HTML Structure
 		============================ -->
         <section id="idocs_html_structure">
